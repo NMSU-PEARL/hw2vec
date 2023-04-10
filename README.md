@@ -8,7 +8,7 @@ In this readme, we demonstrate how to use **HW2VEC** and provide its use-cases f
 We hope that **HW2VEC** can be helpful for researchers and practitioners in hardware security research community. In this repo, we integrate [Pyverilog](https://github.com/PyHDI/Pyverilog) as part of our graph extraction pipeline (**HW2GRAPH**) and [Pytorch-Geometric](https://github.com/rusty1s/pytorch_geometric) into our graph learning pipeline (**GRAPH2VEC**). The architecture of **HW2VEC** is shown as follows:
 ![](https://github.com/AICPS/hw2vec/blob/master/figures/archi.png?raw=true)
 
-# To Get Started
+# To Get Started (Updated by NMSU PEARL LAB)
 We recommend our users to use Linux system and [Anaconda](https://www.anaconda.com/) as the virtual environment. The environment requirements for hw2vec is as follows,
 - python >= 3.6 
 - torch == 1.6.0
