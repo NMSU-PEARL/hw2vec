@@ -20,10 +20,13 @@ You can either install hw2vec from pypi or clone our repo. Here we provide one r
 # run the following commands if you choose to install hw2vec from pip instead of installing from pypi or cloning our repo.
 $ conda create --name hw2vec python=3.6
 $ conda activate hw2vec
-$ python -m pip install hw2vec 
 
-# for installing pygraphviz. 
-$ python -m pip install pygraphviz
+# Make sure you have cuda 10.1 installed on your machine. Run the following commands to install pytorch_geometric 1.6.1:
+$ python -m pip install torch-scatter --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+$cu101.html
+$ python -m pip install torch-sparse --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+cu101.html
+$ python -m pip install torch-cluster --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+cu101.html
+$ python -m pip install torch-spline-conv --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+cu101.html
+$ python -m pip install torch-geometric --no-cache-dir
 
 # for install torch and torch_geometric.
 $ conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
