@@ -21,16 +21,25 @@ You can either install hw2vec from pypi or clone our repo. Here we provide one r
 $ conda create --name hw2vec python=3.6
 $ conda activate hw2vec
 
+# Install pytorch and cuda toolkit (Make sure you have cuda 10.1 installed on your machine)
+$ conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
+
+# Install scipy:
+$ conda install -c anaconda scipy=1.4.1
+
 # Make sure you have cuda 10.1 installed on your machine. Run the following commands to install pytorch_geometric 1.6.1:
-$ python -m pip install torch-scatter --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+$cu101.html
-$ python -m pip install torch-sparse --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+cu101.html
-$ python -m pip install torch-cluster --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+cu101.html
-$ python -m pip install torch-spline-conv --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.1+cu101.html
+$ python -m pip install torch-scatter --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
+$ python -m pip install torch-sparse --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
+$ python -m pip install torch-cluster --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
+$ python -m pip install torch-spline-conv --no-cache-dir --no-index --find-links https://pytorch-geometric.com/whl/torch-1.6.0+cu101.html
 $ python -m pip install torch-geometric --no-cache-dir
 
-# for install torch and torch_geometric.
-$ conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1 -c pytorch
+
+# Afterwards, install the remaining dependencies:
+$ pip install pyverilog pydot pygraphviz matplotlib 
+
 ```
+
 This set of commands assumes you have cuda 10.1 in your local and you are using Linux. Please refer to the installation guides of [torch](https://pytorch.org/) and [pytorch_geometric](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html) if you have different cuda settings. If installing pygraphviz in windows, please refer to this [issue](https://github.com/pygraphviz/pygraphviz/issues/58) for more information.
 
 # Use Cases Examples
